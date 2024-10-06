@@ -1,4 +1,5 @@
 import ToDoForm from "./component/Todo/ToDoForm";
+import TodoList from "./component/Todo/TodoList";
 import ToDoProvider from "./context/ToDoProvider";
 
 
@@ -8,6 +9,7 @@ const App = () => {
     <ToDoProvider>
       <div>
         <ToDoForm></ToDoForm>
+        <TodoList></TodoList>
       </div>
     </ToDoProvider>
   );
