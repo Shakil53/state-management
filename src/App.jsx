@@ -1,11 +1,15 @@
-import UseReduserFun from "./component/UseReduserFun";
+import ToDoForm from "./component/Todo/ToDoForm";
+import ToDoProvider from "./context/ToDoProvider";
 
 
 const App = () => {
+  
   return (
-    <div>
-      <UseReduserFun></UseReduserFun>
-    </div>
+    <ToDoProvider>
+      <div>
+        <ToDoForm></ToDoForm>
+      </div>
+    </ToDoProvider>
   );
 };
 
